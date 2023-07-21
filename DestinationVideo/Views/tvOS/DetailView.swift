@@ -38,11 +38,9 @@ struct DetailView: View {
     }
 }
 
-#if !os(tvOS)
 #Preview {
     NavigationStack {
         DetailView(video: .preview)
-            .environmentObject(PlayerModel())
+            .environment(PlayerModel())
     }
 }
-#endif

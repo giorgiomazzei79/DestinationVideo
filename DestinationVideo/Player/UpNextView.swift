@@ -21,9 +21,7 @@ struct UpNextView: View {
     }
 }
 
-//#if os(xrOS)
-//#Preview {
-//    UpNextView(videos: .all, model: PlayerModel())
-//        .padding()
-//}
-//#endif
+#Preview {
+    UpNextView(videos: .all, model: PlayerModel())
+        .padding()
+}

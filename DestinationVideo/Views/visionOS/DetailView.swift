@@ -57,9 +57,9 @@ struct DetailView: View {
     }
 }
 
-//#Preview {
-//    NavigationStack {
-//        DetailView(video: .preview)
-//            .environment(PlayerModel())
-//    }
-//}
+#Preview {
+    NavigationStack {
+        DetailView(video: .preview)
+            .environment(PlayerModel())
+    }
+}

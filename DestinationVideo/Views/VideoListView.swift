@@ -96,25 +96,23 @@ struct VideoListView: View {
     }
 }
 
-//#if os(xrOS)
-//#Preview("Full") {
-//    NavigationStack {
-//        VideoListView(title: "Featured", videos: .all, cardStyle: .full, cardSpacing: 80)
-//            .frame(height: 380)
-//    }
-//}
-//
-//#Preview("Up Next") {
-//    NavigationStack {
-//        VideoListView(title: "Up Next", videos: .all, cardStyle: .upNext, cardSpacing: 20)
-//            .frame(height: 200)
-//    }
-//}
-//
-//#Preview("Compact") {
-//    NavigationStack {
-//        VideoListView(videos: .all, cardStyle: .compact, cardSpacing: 20)
-//            .padding()
-//    }
-//}
-//#endif
+#Preview("Full") {
+    NavigationStack {
+        VideoListView(title: "Featured", videos: .all, cardStyle: .full, cardSpacing: 80)
+            .frame(height: 380)
+    }
+}
+
+#Preview("Up Next") {
+    NavigationStack {
+        VideoListView(title: "Up Next", videos: .all, cardStyle: .upNext, cardSpacing: 20)
+            .frame(height: 200)
+    }
+}
+
+#Preview("Compact") {
+    NavigationStack {
+        VideoListView(videos: .all, cardStyle: .compact, cardSpacing: 20)
+            .padding()
+    }
+}

@@ -61,11 +61,11 @@ private struct TrailerPosterView: View {
     }
 }
 
-//#Preview("Trailer View") {
-//    TrailerView(video: .preview)
-//        .environment(PlayerModel())
-//}
-//
-//#Preview("Trailer Poster View") {
-//    TrailerPosterView(video: .preview)
-//}
+#Preview("Trailer View") {
+    TrailerView(video: .preview)
+        .environment(PlayerModel())
+}
+
+#Preview("Trailer Poster View") {
+    TrailerPosterView(video: .preview)
+}

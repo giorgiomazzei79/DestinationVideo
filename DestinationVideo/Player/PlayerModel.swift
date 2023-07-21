@@ -250,11 +250,11 @@ enum Presentation {
             let experience: AVAudioSessionSpatialExperience
             switch presentation {
             case .inline:
-                // Set a small, front-focused experience when watching trailers.
-                experience = .headTracked(soundStageSize: .small, anchoringStrategy: .front)
+                // Set a small, focused sound stage when watching trailers.
+                experience = .headTracked(soundStageSize: .small, anchoringStrategy: .automatic)
             case .fullScreen:
                 // Set a large sound stage size when viewing fullscreen.
-                experience = .headTracked(soundStageSize: .automatic, anchoringStrategy: .automatic)
+                experience = .headTracked(soundStageSize: .large, anchoringStrategy: .automatic)
             }
             try AVAudioSession.sharedInstance().setIntendedSpatialExperience(experience)
         } catch {

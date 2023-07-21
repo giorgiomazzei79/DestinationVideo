@@ -83,12 +83,12 @@ struct RoleView: View {
     }
 }
 
-//#if os(xrOS)
-//#Preview {
-//    VideoInfoView(video: .preview)
-//        .padding()
-//        .frame(width: 500, height: 500)
-//        .background(.gray)
-//        .previewLayout(.sizeThatFits)
-//}
-//#endif
+#if os(xrOS)
+#Preview {
+    VideoInfoView(video: .preview)
+        .padding()
+        .frame(width: 500, height: 500)
+        .background(.gray)
+        .previewLayout(.sizeThatFits)
+}
+#endif

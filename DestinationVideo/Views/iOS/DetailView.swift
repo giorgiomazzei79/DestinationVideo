@@ -81,11 +81,9 @@ struct DetailView: View {
     }
 }
 
-#if os(xrOS)
 #Preview {
     NavigationStack {
         DetailView(video: .preview)
             .environment(PlayerModel())
     }
 }
-#endif
